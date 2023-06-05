@@ -24,7 +24,7 @@ export function TopCard(props) {
       <img
         src={post.images}
         alt="Product"
-        className="lg:h-[80vh] h-[41vh]"
+        className=""
       />
     </div>
 

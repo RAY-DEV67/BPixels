@@ -64,16 +64,6 @@ export function Menu() {
       return () => clearInterval(timer)
   }, [kizzindex, Kizz.length]);
 
-  const Tiwa = [ "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275868544_691450531995268_2497826486572051990_n_jvofcc.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/276003672_123602643581946_8802118422008466848_n_bsbcwt.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275916151_1134309724061624_906473185975115775_n_vm8sjp.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/275980392_684263629392138_829900645164399234_n_hmd25c.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275907746_131239482804297_55378308740764359_n_wgfavs.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275853626_349112410313422_4436536087068310773_n_ft0oog.jpg" ]
-  const [tiwaindex, settiwaindex] = useState(0);
-
-  useEffect(() => {
-      const timer = setInterval(() => {
-          settiwaindex((tiwaindex + 1) % Tiwa.length)
-      }, 1500)
-
-      return () => clearInterval(timer)
-  }, [tiwaindex, Tiwa.length]);
 
   const Buju = [ "https://res.cloudinary.com/dvl38skbc/image/upload/v1685461581/bpixels/337918308_971875267078389_718067738750409045_n_hryhxg.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685461581/bpixels/337551927_673502598116515_6477222553543742622_n_qofbxb.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685461580/bpixels/337318877_691415626090977_7353413793250174543_n_rtle2a.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685461561/bpixels/328718353_203957048936829_5692470506216473991_n_udcv9r.jpg"  ]
   const [bujuindex, setbujuindex] = useState(0);
@@ -109,18 +99,6 @@ export function Menu() {
   }, [davidoindex, Davido.length]);
 
   
-  const AG = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278931536_685704526014949_1911345965799427350_n_lxj6kz.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278781870_3093813637503478_7859967685087288154_n_nz0yi0.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278860878_682726133001935_5432548848261898077_n_kqivh5.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278833854_721195105715244_656538482517354451_n_wqz0fw.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278863302_561388428550426_6861540001604623604_n_nn2gdd.jpg" ]
-  const [agindex, setagindex] = useState(0);
-
-  useEffect(() => {
-      const timer = setInterval(() => {
-          setagindex((agindex + 1) % AG.length)
-      }, 1500)
-
-      return () => clearInterval(timer)
-  }, [agindex, AG.length]);
-
-  
   const Wizkid = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293945948_1895528330636386_2515850057578404975_n_vdwcld.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293804569_788772185624329_2263576064282095554_n_mjia0p.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293638065_1479079652531310_1668746118747038057_n_xegwow.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293604603_361888366127554_4765292184815734781_n_rzpomp.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293641043_435605724958519_7262207464844734887_n_yklykw.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293625947_1989758461219480_3097801478813631841_n_mibdss.jpg"  ]
   const [wizkidindex, setwizkidindex] = useState(0);
 
@@ -142,6 +120,17 @@ export function Menu() {
 
       return () => clearInterval(timer)
   }, [vectorindex, Vector.length]);
+
+  const Rema = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685950061/bpixels/BP_01540-Edit_x2uzfj.webp", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685950043/bpixels/BP_01537-Edit_ttrsnf.webp", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685950017/bpixels/BP_01399-Edit_1_pptnai.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685949983/bpixels/BP_01393-Edit_m1tqbe.webp", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685949956/bpixels/BP_00975_lbihnw.webp", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685949934/bpixels/BP_00967_goabar.webp"]
+  const [remaindex, setremaindex] = useState(0);
+
+  useEffect(() => {
+      const timer = setInterval(() => {
+          setremaindex((remaindex + 1) % Rema.length)
+      }, 1500)
+
+      return () => clearInterval(timer)
+  }, [remaindex, Rema.length]);
 
   return (
     <div className="relative text-[#ffd700] bg-[#E9f2ea]">
@@ -235,6 +224,62 @@ export function Menu() {
           </div>
         </div>
       </div>
+
+      <AnimatedDiv>
+          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
+            <img
+              alt="img2"
+              src={Rema[remaindex]}
+              className="object-contain topcard lg:w-[50vw]"
+            />
+          </div>
+          </AnimatedDiv>
+
+
+          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275868544_691450531995268_2497826486572051990_n_jvofcc.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/276003672_123602643581946_8802118422008466848_n_bsbcwt.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275916151_1134309724061624_906473185975115775_n_vm8sjp.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/275980392_684263629392138_829900645164399234_n_hmd25c.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275907746_131239482804297_55378308740764359_n_wgfavs.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275853626_349112410313422_4436536087068310773_n_ft0oog.jpg"
+              alt="Tiwa"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+        </div>
 
       
           <AnimatedDiv>
@@ -463,94 +508,35 @@ export function Menu() {
           <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/202068865_242436657234069_8180276636041495496_n_c0zacl.jpg"
-              alt="LAX"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278931536_685704526014949_1911345965799427350_n_lxj6kz.jpg"
+              alt="Ag"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/202625132_346792470407760_1202106470024097790_n_e6q8m1.jpg"
-              alt="LAX"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278781870_3093813637503478_7859967685087288154_n_nz0yi0.jpg"
+              alt="AG"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/203574265_326439559132064_2794394380176729123_n_vsi8ii.jpg"
-              alt="LAX"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278860878_682726133001935_5432548848261898077_n_kqivh5.jpg"
+              alt="AG"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/202170926_339552057694586_1772370969774687228_n_onrhe8.jpg"
-              alt="LAX"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/201944332_217062960262421_1200791422014587055_n_twb1ej.jpg"
-              alt="LAX"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/202607484_2846302149019524_5796316732061861208_n_huvxsn.jpg"
-              alt="LAX"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278833854_721195105715244_656538482517354451_n_wqz0fw.jpg"
+              alt="AG"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
         </div>
 
-
-        
-        <AnimatedDiv>
-          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
-            <img
-              alt="img2"
-              src={AG[agindex]}
-              className="object-contain topcard lg:w-[50vw]"
-            />
-          </div>
-          </AnimatedDiv>
-
-          
-          
-          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272032211_459243985876933_1501892010532603475_n_czrf3f.jpg"
-              alt="Banton"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272009762_661347771667907_8536121236229966257_n_ijscpc.jpg"
-              alt="Banton"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272200555_444671487005908_7354222465238871103_n_cztwzc.jpg"
-              alt="Banton"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272217141_144918727904870_8140277218703876832_n_ygyjyz.jpg"
-              alt="Banton"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-        </div>
-
-       <AnimatedDiv>
+       {/* <AnimatedDiv>
        <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
             <img
               alt="img2"
@@ -558,55 +544,7 @@ export function Menu() {
               className="object-contain topcard lg:w-[50vw]"
             />
           </div>
-       </AnimatedDiv>
-
-          
-          
-          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465594/bpixels/346287509_505978428286929_3149987116542764281_n_cbebcx.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465594/bpixels/346237716_564921712456033_8493191047298654648_n_xouoip.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465595/bpixels/346311331_1662203207566519_4334805424621391663_n_p6zp8w.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465595/bpixels/346378628_961937531604925_1612883111618443095_n_nmvtgw.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465595/bpixels/346405500_255557590335078_7488394895358993054_n_chkrrx.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685465595/bpixels/346287512_1314238589438845_4855898673281852778_n_qjusyv.jpg"
-              alt="Don Jazzy"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-        </div>
-
+       </AnimatedDiv> */}
         
        <AnimatedDiv>
        <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
@@ -617,49 +555,6 @@ export function Menu() {
             />
           </div>
        </AnimatedDiv>
-
-                    
-          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/271940328_658586891932292_8141321156583690956_n_cmz0sd.jpg"
-              alt="Ugo"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/271996887_3015108708705837_6697444286818050077_n_v00ebq.jpg"
-              alt="Ugo"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/272004996_4650113761733209_7816539623113807528_n_co1af6.jpg"
-              alt="Ugo"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734738/bpixels/272012604_645292166915058_7349075016151783510_n_giabrf.jpg"
-              alt="Udo"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-        </div>
-
-        
-<AnimatedDiv>
-<div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
-            <img
-              alt="img2"
-              src={Tiwa[tiwaindex]}
-              className="object-contain topcard lg:w-[50vw]"
-            />
-          </div>
-</AnimatedDiv>
 
           <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
@@ -708,7 +603,7 @@ export function Menu() {
 
         <div className="h-[100vh] items-end flex flex-col mt-[1rem] text-[#000009] font-bold justify-start footer">
         <a href="https://www.instagram.com/bpixels.inc" target="_Blank" className="">
-        <button className="mt-[50%] mr-[1rem] rounded-[20px] border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#ffffff] text-[#000000] py-[0.5rem]">
+        <button className="mt-[30%] mr-[1rem] rounded-[20px] border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#ffffff] text-[#000000] py-[0.5rem]">
              Book A Session
             </button>
         </a>

@@ -17,7 +17,7 @@
   animation: zoom-in-fade 5s ease-in-out;
 }
 .landing2 {
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685469290/bpixels/322181059_5730133613691167_8037204559058642872_n_dtdrt9.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685952305/bpixels/7b_gzmywm.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -125,7 +125,7 @@ transform: translateX(-50%)
 }
 
 .footer{
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685468005/bpixels/324230249_854060389041990_4253394769706917261_n_rlni8f.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685949118/bpixels/323322698_126598713616241_422311580566071962_n_bbfwj3.jpg");
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
