@@ -602,7 +602,7 @@ export function Menu() {
         </div>
 
         <div className="h-[100vh] items-end flex flex-col mt-[1rem] text-[#000009] font-bold justify-start footer">
-        <a href="https://www.instagram.com/bpixels.inc" target="_Blank" className="">
+        <a href="mailto:bpixels.incc@gmail.com" target="_Blank" className="">
         <button className="mt-[30%] mr-[1rem] rounded-[20px] border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#ffffff] text-[#000000] py-[0.5rem]">
              Book A Session
             </button>
